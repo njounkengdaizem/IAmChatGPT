@@ -8,15 +8,15 @@
 import UIKit
 
 class OneViewController: UIViewController {
+    @IBOutlet var screenOne: UIView!
 
+    @IBOutlet weak var subjectTitle: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.subjectTitle.textColor = .systemTeal
     }
     
-   
-    
+
     /*
     // MARK: - Navigation
 

@@ -9,9 +9,10 @@ import UIKit
 
 class TwoViewController: UIViewController {
 
+    @IBOutlet weak var subjectTitle: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.subjectTitle.textColor = .systemOrange
         // Do any additional setup after loading the view.
     }
     

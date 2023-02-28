@@ -11,10 +11,12 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var GPTQuote: UILabel!
     @IBOutlet weak var GPTName: UITextField!
-    @IBOutlet weak var GPTImage: UIImageView!
+  
+    @IBOutlet weak var quoteText: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         GPTName.layer.opacity = 0.5
+  
     }
     //    @IBAction func firstButtonClicked(_ sender: UIButton) {
     //        print("I was clicked")
