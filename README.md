@@ -26,8 +26,11 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
-Make the screens more user friendly and add content. Right now, the app is practically boring
+- [X] List anything else that you can get done to improve the app functionality!
+- Make the screens more user friendly.
+- Add styling
+- Add user interactions (clicking, scrolling etc.)
+- Add content. Right now, the app is practically boring
 
 ## Video Walkthrough
 
