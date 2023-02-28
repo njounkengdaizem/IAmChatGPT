@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="z7K-gw-e3I">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -14,30 +14,30 @@
             <objects>
                 <viewController id="BYZ-38-t0r" userLabel="Main Screen View Controller" customClass="ViewController" customModule="IAmChatGPT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lZd-uW-5Xe">
-                                <rect key="frame" x="16" y="76" width="382" height="770"/>
+                                <rect key="frame" x="16" y="75" width="396" height="801"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8T1-aM-eAx" userLabel="Profile">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="380"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="396" height="395.66666666666669"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xhC-JF-f0C">
-                                                <rect key="frame" x="0.0" y="0.0" width="361" height="180"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="187.66666666666666"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ChatGPT" translatesAutoresizingMaskIntoConstraints="NO" id="NB2-Uw-s0X">
-                                                        <rect key="frame" x="17" y="19" width="258" height="165"/>
+                                                        <rect key="frame" x="58" y="22" width="258" height="165"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XSC-YY-AC5">
-                                                <rect key="frame" x="0.0" y="200" width="361" height="180"/>
+                                                <rect key="frame" x="0.0" y="207.66666666666669" width="375" height="188"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;Beware of Artificial Idiocracy!&quot;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70W-7e-WDU">
-                                                        <rect key="frame" x="16" y="16" width="280" height="113"/>
+                                                        <rect key="frame" x="47" y="20" width="280" height="113"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="tintColor" red="0.49933879710000001" green="0.74266100469999996" blue="0.66988445230000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -54,10 +54,10 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fT7-6u-c3l" userLabel="Buttons Stack">
-                                        <rect key="frame" x="0.0" y="390" width="382" height="380"/>
+                                        <rect key="frame" x="0.0" y="405.66666666666674" width="396" height="395.33333333333326"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fhp-xj-Fze">
-                                                <rect key="frame" x="24.5" y="0.0" width="333" height="95"/>
+                                                <rect key="frame" x="24.666666666666657" y="0.0" width="346.66666666666674" height="98.666666666666671"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BingLogo" translatesAutoresizingMaskIntoConstraints="NO" id="1Cd-B7-1ky">
                                                         <rect key="frame" x="0.0" y="10" width="32" height="30"/>
@@ -73,10 +73,10 @@
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DAM-7A-fQZ">
-                                                <rect key="frame" x="24.5" y="95" width="333" height="95"/>
+                                                <rect key="frame" x="24.666666666666657" y="98.666666666666686" width="346.66666666666674" height="99"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y8v-wc-QNM">
-                                                        <rect key="frame" x="0.0" y="4" width="237" height="35"/>
+                                                        <rect key="frame" x="0.0" y="4" width="303" height="35"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <gestureRecognizers/>
                                                         <state key="normal" title="Button"/>
@@ -90,10 +90,10 @@
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6qM-hO-8JY">
-                                                <rect key="frame" x="24.5" y="190" width="333" height="95"/>
+                                                <rect key="frame" x="24.666666666666657" y="197.66666666666669" width="346.66666666666674" height="98.666666666666686"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4d-ka-HFJ">
-                                                        <rect key="frame" x="3" y="8" width="237" height="35"/>
+                                                        <rect key="frame" x="3" y="8" width="301" height="35"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <gestureRecognizers/>
                                                         <state key="normal" title="Button"/>
@@ -107,10 +107,10 @@
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BU4-EP-bRv">
-                                                <rect key="frame" x="24.5" y="284.99999999999994" width="333" height="95.000000000000057"/>
+                                                <rect key="frame" x="24.666666666666657" y="296.33333333333331" width="346.66666666666674" height="99"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3vj-uR-eBC">
-                                                        <rect key="frame" x="0.0" y="8" width="237" height="35"/>
+                                                        <rect key="frame" x="0.0" y="8" width="310" height="35"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <gestureRecognizers/>
                                                         <state key="normal" title="Button"/>
@@ -173,31 +173,31 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="820.61068702290072" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="820.09345794392516" y="-2.5917926565874732"/>
         </scene>
         <!--One View Controller-->
         <scene sceneID="ydT-u1-nl7">
             <objects>
                 <viewController id="KQm-ni-5VF" customClass="OneViewController" customModule="IAmChatGPT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" semanticContentAttribute="spatial" id="WG6-yN-ZCa">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ai brain" translatesAutoresizingMaskIntoConstraints="NO" id="y4Q-zx-rAg">
-                                <rect key="frame" x="16" y="108" width="382" height="256"/>
+                                <rect key="frame" x="16" y="107" width="396" height="256"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AM4-oY-1X3">
-                                <rect key="frame" x="71" y="427.5" width="270" height="389.5"/>
+                                <rect key="frame" x="71" y="426.66666666666674" width="284" height="420.33333333333326"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">As a language model, I work by processing natural language input from users and generating appropriate responses. I was trained using a massive amount of text data using deep learning techniques, specifically a type of neural network called a Transformer architecture. This training enables me to understand and respond to a wide range of questions, based on patterns and associations that I have learned from the data.
+                                <string key="text">As a language model, I work by processing natural language input from users and generating appropriate responses. I was trained using a massive amount of text data using deep learning techniques, specifically a type of neural network called a Transformer architecture. This training enables me to understand and respond to a wide range of questions, based on patterns and associations that I have learned from the data.
 
-When a user enters a question or statement, I first use natural language processing techniques to preprocess the input and extract relevant information from it. Then, I use my internal algorithms and knowledge to generate an appropriate response based on the input I have received.</mutableString>
+When a user enters a question or statement, I first use natural language processing techniques to preprocess the input and extract relevant information from it. Then, I use my internal algorithms and knowledge to generate an appropriate response based on the input I have received.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do I work?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byY-MX-u1L">
-                                <rect key="frame" x="103" y="380" width="209" height="31.5"/>
+                                <rect key="frame" x="103" y="379" width="223" height="31.666666666666686"/>
                                 <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <nil key="textColor"/>
@@ -235,14 +235,21 @@ When a user enters a question or statement, I first use natural language process
             <objects>
                 <viewController id="agM-aU-k58" customClass="ThreeViewController" customModule="IAmChatGPT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6jS-cx-4ds">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="question" translatesAutoresizingMaskIntoConstraints="NO" id="Iab-up-24b">
-                                <rect key="frame" x="16" y="108" width="382" height="256"/>
+                                <rect key="frame" x="16" y="107" width="396" height="256"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pRB-xN-80e">
-                                <rect key="frame" x="16" y="428" width="382" height="418"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to use me?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AI9-Yv-wxg">
+                                <rect key="frame" x="103" y="379" width="214" height="32"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="X5w-Kg-ckE">
+                                <rect key="frame" x="72" y="441" width="284" height="450.66666666666674"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <mutableString key="text">Answering questions: You can use me to provide answers to questions on a wide range of topics, such as science, history, or current events.
 
@@ -257,59 +264,57 @@ Content creation: You can use me to generate content for your blog, website, or 
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to use me?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AI9-Yv-wxg">
-                                <rect key="frame" x="103" y="380" width="200" height="32"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RxI-iP-yPL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="RxI-iP-yPL" firstAttribute="trailing" secondItem="Iab-up-24b" secondAttribute="trailing" constant="16" id="2fH-cH-OjH"/>
                             <constraint firstItem="Iab-up-24b" firstAttribute="top" secondItem="RxI-iP-yPL" secondAttribute="top" constant="16" id="3Gn-LU-VQ5"/>
-                            <constraint firstItem="pRB-xN-80e" firstAttribute="top" secondItem="AI9-Yv-wxg" secondAttribute="bottom" constant="16" id="90f-Pg-rFe"/>
-                            <constraint firstItem="pRB-xN-80e" firstAttribute="leading" secondItem="RxI-iP-yPL" secondAttribute="leading" constant="16" id="9L7-Lf-4PY"/>
-                            <constraint firstItem="RxI-iP-yPL" firstAttribute="bottom" secondItem="pRB-xN-80e" secondAttribute="bottom" constant="16" id="DRi-77-pDd"/>
                             <constraint firstItem="AI9-Yv-wxg" firstAttribute="top" secondItem="Iab-up-24b" secondAttribute="bottom" constant="16" id="Lqk-sk-KlY"/>
                             <constraint firstItem="RxI-iP-yPL" firstAttribute="trailing" secondItem="AI9-Yv-wxg" secondAttribute="trailing" constant="111" id="PaZ-Ng-8e5"/>
                             <constraint firstItem="AI9-Yv-wxg" firstAttribute="leading" secondItem="RxI-iP-yPL" secondAttribute="leading" constant="103" id="Vmh-8m-AVX"/>
                             <constraint firstItem="AI9-Yv-wxg" firstAttribute="top" secondItem="Iab-up-24b" secondAttribute="bottom" constant="16" id="ZIO-ha-UMI"/>
-                            <constraint firstItem="RxI-iP-yPL" firstAttribute="trailing" secondItem="pRB-xN-80e" secondAttribute="trailing" constant="16" id="aRN-8a-YwU"/>
                             <constraint firstItem="Iab-up-24b" firstAttribute="leading" secondItem="RxI-iP-yPL" secondAttribute="leading" constant="16" id="gnb-Ks-TMQ"/>
-                            <constraint firstItem="pRB-xN-80e" firstAttribute="top" secondItem="AI9-Yv-wxg" secondAttribute="bottom" constant="16" id="lGu-tJ-DfG"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="X8F-wr-pWy"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uIm-RW-52Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2107.2463768115945" y="-2.0089285714285712"/>
+            <point key="canvasLocation" x="2105.6074766355141" y="-2.5917926565874732"/>
         </scene>
         <!--Two View Controller-->
         <scene sceneID="ru6-R2-RAj">
             <objects>
                 <viewController id="q0n-2T-ans" customClass="TwoViewController" customModule="IAmChatGPT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LOb-mp-LQR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="how to use" translatesAutoresizingMaskIntoConstraints="NO" id="7OZ-i1-TfD">
                                 <rect key="frame" x="54" y="113" width="307" height="227"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What are my limitations?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDy-eP-UO5">
-                                <rect key="frame" x="69" y="348" width="276" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What are my limitations?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDy-eP-UO5">
+                                <rect key="frame" x="69" y="387" width="276" height="29"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1LQ-6r-DaY">
-                                <rect key="frame" x="16" y="393" width="388" height="528"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cgF-eg-bAp">
+                                <rect key="frame" x="61" y="441" width="284" height="634.33333333333348"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">As an AI language model, I have several limitations that users should be aware of. These include my limited contextual understanding, the potential for bias and inaccuracies in my responses, my inability to reason in the same way as humans, and my lack of emotional intelligence.
+                                <mutableString key="text">Limited Contextual Understanding:
+While I can understand and generate responses to a wide range of questions, my understanding is limited by the context of the input I receive. I don't have access to real-world knowledge or experiences, and my responses are based solely on the patterns and associations I have learned from my training data. Thus, there may be instances where my responses are not relevant or accurate based on the specific context of a user's question.
 
- While I can understand and respond to a wide range of questions, my understanding is limited by the context of the input I receive, and my responses are based solely on the patterns and associations I have learned from my training data. Therefore, it's important for users to keep in mind that while I can be a powerful tool for generating responses, I have limitations and may not always provide accurate or relevant responses.</mutableString>
+Bias and Inaccuracies:
+As an AI model, I may sometimes generate responses that are biased or inaccurate, based on the biases present in my training data. Additionally, there may be instances where my responses are incomplete or incorrect due to gaps in my training data or limitations in my algorithms.
+
+Inability to Reason:
+I am not capable of reasoning in the same way that humans can. While I can generate responses based on patterns and associations, I don't have the ability to understand the underlying meaning of a question or generate responses that require complex reasoning or decision-making.
+
+Lack of Emotional Intelligence:
+As an AI language model, I don't have emotional intelligence and can't understand or respond to emotions in the same way that humans can.</mutableString>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -318,16 +323,9 @@ Content creation: You can use me to generate content for your blog, website, or 
                         <viewLayoutGuide key="safeArea" id="LIg-1R-hun"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="1LQ-6r-DaY" secondAttribute="bottom" constant="-25" id="6hc-we-Rut"/>
-                            <constraint firstItem="1LQ-6r-DaY" firstAttribute="top" secondItem="JDy-eP-UO5" secondAttribute="bottom" constant="16" id="HPZ-gd-8fj"/>
                             <constraint firstItem="JDy-eP-UO5" firstAttribute="top" secondItem="LOb-mp-LQR" secondAttribute="top" constant="348" id="JbK-5B-0Xf"/>
                             <constraint firstItem="JDy-eP-UO5" firstAttribute="leading" secondItem="LIg-1R-hun" secondAttribute="leading" constant="69" id="MkF-qr-iNx"/>
-                            <constraint firstItem="1LQ-6r-DaY" firstAttribute="leading" secondItem="LIg-1R-hun" secondAttribute="leading" constant="16" id="OPl-VS-vue"/>
-                            <constraint firstItem="LIg-1R-hun" firstAttribute="trailing" secondItem="1LQ-6r-DaY" secondAttribute="trailing" constant="10" id="XDY-o6-8HO"/>
-                            <constraint firstItem="1LQ-6r-DaY" firstAttribute="leading" secondItem="LIg-1R-hun" secondAttribute="leading" constant="16" id="daJ-bi-XvE"/>
-                            <constraint firstItem="1LQ-6r-DaY" firstAttribute="top" secondItem="JDy-eP-UO5" secondAttribute="bottom" constant="16" id="hoO-er-sma"/>
                             <constraint firstItem="JDy-eP-UO5" firstAttribute="top" secondItem="7OZ-i1-TfD" secondAttribute="bottom" constant="8" id="oYC-m7-5Bk"/>
-                            <constraint firstAttribute="bottom" secondItem="1LQ-6r-DaY" secondAttribute="bottom" constant="-25" id="s3C-0o-J8b"/>
                             <constraint firstItem="JDy-eP-UO5" firstAttribute="centerX" secondItem="7OZ-i1-TfD" secondAttribute="centerX" id="xkb-by-cEc"/>
                         </constraints>
                     </view>
@@ -343,7 +341,7 @@ Content creation: You can use me to generate content for your blog, website, or 
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="z7K-gw-e3I" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="o11-uN-oPr">
-                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="47" width="428" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -358,7 +356,7 @@ Content creation: You can use me to generate content for your blog, website, or 
     </scenes>
     <resources>
         <image name="BingLogo" width="243" height="243"/>
-        <image name="ChatGPT" width="249" height="249"/>
+        <image name="ChatGPT" width="249.33332824707031" height="249.33332824707031"/>
         <image name="ai brain" width="256" height="256"/>
         <image name="how to use" width="256" height="256"/>
         <image name="question" width="256" height="256"/>
