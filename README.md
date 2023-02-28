@@ -21,12 +21,13 @@ The following **required** functionality is completed:
  
 The following **optional** features are implemented:
 
-- [ ] Improve and customize the user interface through styling and coloring
-- [ ] Allow users to scroll when context items are off-screen (table view implemention)
+- [X] Improve and customize the user interface through styling and coloring
+- [X] Allow users to scroll when context items are off-screen (table view implemention)
 
 The following **additional** features are implemented:
 
 - [ ] List anything else that you can get done to improve the app functionality!
+Make the screens more user friendly and add content. Right now, the app is practically boring
 
 ## Video Walkthrough
 
