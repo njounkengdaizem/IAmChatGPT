@@ -1,11 +1,11 @@
-# IAmChatGPT
+# I Am ChatGPT
 Ever wanted to know about how I came to life and what my future holds? Check out this iOS application to learn more.
 
-# Project 1 - *Name of App Here*
+# Project 1 - *I Am ChatGPT*
 
-Submitted by: **Your Name Here**
+Submitted by: **Daize Njounkeng**
 
-**Name of your app** is an app that introduces ... [TODO] 
+**I Am ChatGPT** is an app that introduces ... [TODO] 
 
 Time spent: **X** hours spent in total
 
