@@ -1,5 +1,5 @@
 # I Am ChatGPT
-Ever wanted to know about how I came to life and what my future holds? Check out this iOS application to learn more.
+Ever wanted to know more about ChatGPT? Check out this iOS application.
 
 # Project 1 - *I Am ChatGPT*
 
@@ -7,7 +7,7 @@ Submitted by: **Daize Njounkeng**
 
 **I Am ChatGPT** is an app that introduces ... [TODO] 
 
-Time spent: **X** hours spent in total
+Time spent: **4** hours spent in total
 
 ## Required Features
 
@@ -32,14 +32,8 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+https://github.com/njounkengdaizem/IAmChatGPT/blob/main/videowalkthrough.gif
 
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
 
 ## Notes
 
