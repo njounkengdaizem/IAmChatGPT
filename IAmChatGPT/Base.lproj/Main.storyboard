@@ -1,24 +1,372 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="z7K-gw-e3I">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main Screen View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Main Screen View Controller" customClass="ViewController" customModule="IAmChatGPT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lZd-uW-5Xe">
+                                <rect key="frame" x="16" y="76" width="382" height="770"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8T1-aM-eAx" userLabel="Profile">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="380"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xhC-JF-f0C">
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="180"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ChatGPT" translatesAutoresizingMaskIntoConstraints="NO" id="NB2-Uw-s0X">
+                                                        <rect key="frame" x="17" y="19" width="258" height="165"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XSC-YY-AC5">
+                                                <rect key="frame" x="0.0" y="200" width="361" height="180"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;Beware of Artificial Idiocracy!&quot;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70W-7e-WDU">
+                                                        <rect key="frame" x="16" y="16" width="280" height="113"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="tintColor" red="0.49933879710000001" green="0.74266100469999996" blue="0.66988445230000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <color key="highlightedColor" red="0.49933879710000001" green="0.74266100469999996" blue="0.66988445230000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="xhC-JF-f0C" secondAttribute="trailing" constant="21" id="25p-0B-hhf"/>
+                                            <constraint firstItem="xhC-JF-f0C" firstAttribute="trailing" secondItem="XSC-YY-AC5" secondAttribute="trailing" id="OYL-bz-xGd"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fT7-6u-c3l" userLabel="Buttons Stack">
+                                        <rect key="frame" x="0.0" y="390" width="382" height="380"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fhp-xj-Fze">
+                                                <rect key="frame" x="24.5" y="0.0" width="333" height="95"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BingLogo" translatesAutoresizingMaskIntoConstraints="NO" id="1Cd-B7-1ky">
+                                                        <rect key="frame" x="0.0" y="10" width="32" height="30"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Here are the top searches about me" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VBd-St-Chc">
+                                                        <rect key="frame" x="40" y="7" width="265" height="34"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DAM-7A-fQZ">
+                                                <rect key="frame" x="24.5" y="95" width="333" height="95"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y8v-wc-QNM">
+                                                        <rect key="frame" x="0.0" y="4" width="237" height="35"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <gestureRecognizers/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="gray" title="How do you work?"/>
+                                                        <connections>
+                                                            <action selector="firstButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dLy-4L-haN"/>
+                                                            <outletCollection property="gestureRecognizers" destination="7rA-F3-cCr" appends="YES" id="x54-39-iZ0"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6qM-hO-8JY">
+                                                <rect key="frame" x="24.5" y="190" width="333" height="95"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4d-ka-HFJ">
+                                                        <rect key="frame" x="3" y="8" width="237" height="35"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <gestureRecognizers/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="gray" title="What are your limitations?"/>
+                                                        <connections>
+                                                            <action selector="secondButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wyg-Hu-wkZ"/>
+                                                            <outletCollection property="gestureRecognizers" destination="VDc-Of-Fgz" appends="YES" id="jV7-aI-sKB"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BU4-EP-bRv">
+                                                <rect key="frame" x="24.5" y="284.99999999999994" width="333" height="95.000000000000057"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3vj-uR-eBC">
+                                                        <rect key="frame" x="0.0" y="8" width="237" height="35"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <gestureRecognizers/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="gray" title="How can I use you?"/>
+                                                        <connections>
+                                                            <action selector="thirdButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="38r-2p-mId"/>
+                                                            <outletCollection property="gestureRecognizers" destination="g3U-2p-rxK" appends="YES" id="shm-PL-1a9"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Fhp-xj-Fze" firstAttribute="leading" secondItem="fT7-6u-c3l" secondAttribute="leading" constant="24.666666666666657" id="5WR-ys-hWS"/>
+                                            <constraint firstItem="Fhp-xj-Fze" firstAttribute="leading" secondItem="DAM-7A-fQZ" secondAttribute="leading" id="N7x-Ch-ZPc"/>
+                                            <constraint firstItem="DAM-7A-fQZ" firstAttribute="leading" secondItem="6qM-hO-8JY" secondAttribute="leading" id="Nzw-xJ-VEW"/>
+                                            <constraint firstItem="6qM-hO-8JY" firstAttribute="leading" secondItem="BU4-EP-bRv" secondAttribute="leading" id="SMw-oc-rP5"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lZd-uW-5Xe" secondAttribute="trailing" constant="16" id="49Y-mj-LtQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lZd-uW-5Xe" secondAttribute="bottom" constant="16" id="K5Q-Ed-tZ4"/>
+                            <constraint firstItem="lZd-uW-5Xe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Qnl-Ei-EVZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lZd-uW-5Xe" secondAttribute="bottom" constant="16" id="RJa-sY-FWV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="lZd-uW-5Xe" secondAttribute="top" constant="16" id="gnp-9t-o0b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="lZd-uW-5Xe" secondAttribute="top" constant="16" id="hGS-rn-9dL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lZd-uW-5Xe" secondAttribute="trailing" constant="16" id="mss-I0-k48"/>
+                            <constraint firstItem="lZd-uW-5Xe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="xqI-so-f2o"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="KvV-pZ-DyE" userLabel="Question 1"/>
+                    <connections>
+                        <outlet property="GPTName" destination="VBd-St-Chc" id="cpm-UK-GJ1"/>
+                        <outlet property="GPTQuote" destination="70W-7e-WDU" id="1fu-xe-4Vf"/>
+                        <segue destination="q0n-2T-ans" kind="show" identifier="twoSeague" id="e4L-QO-j84"/>
+                        <segue destination="KQm-ni-5VF" kind="show" identifier="oneSeague" id="6Kg-Pv-QWg"/>
+                        <segue destination="agM-aU-k58" kind="show" identifier="threeSeague" id="OE8-cf-Cna"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="7rA-F3-cCr" userLabel="First">
+                    <connections>
+                        <action selector="didFirstTap:" destination="BYZ-38-t0r" id="ahh-Nh-1CG"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="VDc-Of-Fgz" userLabel="Second">
+                    <connections>
+                        <action selector="didSecondTap:" destination="BYZ-38-t0r" id="sgN-2D-ilu"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="g3U-2p-rxK" userLabel="Third">
+                    <connections>
+                        <action selector="didThirdTap:" destination="BYZ-38-t0r" id="8C2-cY-HPM"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="820.61068702290072" y="-2.1126760563380285"/>
+        </scene>
+        <!--One View Controller-->
+        <scene sceneID="ydT-u1-nl7">
+            <objects>
+                <viewController id="KQm-ni-5VF" customClass="OneViewController" customModule="IAmChatGPT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" semanticContentAttribute="spatial" id="WG6-yN-ZCa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ai brain" translatesAutoresizingMaskIntoConstraints="NO" id="y4Q-zx-rAg">
+                                <rect key="frame" x="16" y="108" width="382" height="256"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AM4-oY-1X3">
+                                <rect key="frame" x="71" y="427.5" width="270" height="389.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">As a language model, I work by processing natural language input from users and generating appropriate responses. I was trained using a massive amount of text data using deep learning techniques, specifically a type of neural network called a Transformer architecture. This training enables me to understand and respond to a wide range of questions, based on patterns and associations that I have learned from the data.
+
+When a user enters a question or statement, I first use natural language processing techniques to preprocess the input and extract relevant information from it. Then, I use my internal algorithms and knowledge to generate an appropriate response based on the input I have received.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do I work?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byY-MX-u1L">
+                                <rect key="frame" x="103" y="380" width="209" height="31.5"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kJG-qh-JSb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kJG-qh-JSb" firstAttribute="trailing" secondItem="byY-MX-u1L" secondAttribute="trailing" constant="102" id="2AN-qK-Efj"/>
+                            <constraint firstItem="y4Q-zx-rAg" firstAttribute="top" secondItem="kJG-qh-JSb" secondAttribute="top" constant="16" id="2vN-st-BzM"/>
+                            <constraint firstItem="byY-MX-u1L" firstAttribute="top" secondItem="y4Q-zx-rAg" secondAttribute="bottom" constant="16" id="E9N-Vj-VlQ"/>
+                            <constraint firstItem="byY-MX-u1L" firstAttribute="leading" secondItem="kJG-qh-JSb" secondAttribute="leading" constant="103" id="HB4-XP-AKY"/>
+                            <constraint firstItem="kJG-qh-JSb" firstAttribute="bottom" secondItem="AM4-oY-1X3" secondAttribute="bottom" constant="45" id="MzJ-HB-327"/>
+                            <constraint firstItem="kJG-qh-JSb" firstAttribute="trailing" secondItem="AM4-oY-1X3" secondAttribute="trailing" constant="73" id="NJl-ym-D19"/>
+                            <constraint firstItem="kJG-qh-JSb" firstAttribute="trailing" secondItem="y4Q-zx-rAg" secondAttribute="trailing" constant="16" id="PEP-HA-yht"/>
+                            <constraint firstItem="byY-MX-u1L" firstAttribute="top" secondItem="y4Q-zx-rAg" secondAttribute="bottom" constant="16" id="SpA-cb-kZX"/>
+                            <constraint firstItem="byY-MX-u1L" firstAttribute="leading" secondItem="kJG-qh-JSb" secondAttribute="leading" constant="103" id="WmL-q7-gBU"/>
+                            <constraint firstItem="AM4-oY-1X3" firstAttribute="top" secondItem="byY-MX-u1L" secondAttribute="bottom" constant="16" id="bJK-zK-iYq"/>
+                            <constraint firstItem="byY-MX-u1L" firstAttribute="top" secondItem="y4Q-zx-rAg" secondAttribute="bottom" constant="16" id="eZR-lN-3Ok"/>
+                            <constraint firstItem="AM4-oY-1X3" firstAttribute="leading" secondItem="kJG-qh-JSb" secondAttribute="leading" constant="71" id="g6k-0c-vhY"/>
+                            <constraint firstItem="byY-MX-u1L" firstAttribute="top" secondItem="y4Q-zx-rAg" secondAttribute="bottom" constant="16" id="oad-iH-18b"/>
+                            <constraint firstItem="y4Q-zx-rAg" firstAttribute="leading" secondItem="kJG-qh-JSb" secondAttribute="leading" constant="16" id="ouZ-xL-EtI"/>
+                            <constraint firstItem="kJG-qh-JSb" firstAttribute="trailing" secondItem="byY-MX-u1L" secondAttribute="trailing" constant="102" id="vmQ-mi-MUy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="YDQ-nS-h5D"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IkE-4a-8rO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="820.28985507246387" y="-711.16071428571422"/>
+        </scene>
+        <!--Three View Controller-->
+        <scene sceneID="tVl-lO-slB">
+            <objects>
+                <viewController id="agM-aU-k58" customClass="ThreeViewController" customModule="IAmChatGPT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6jS-cx-4ds">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="question" translatesAutoresizingMaskIntoConstraints="NO" id="Iab-up-24b">
+                                <rect key="frame" x="16" y="108" width="382" height="256"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pRB-xN-80e">
+                                <rect key="frame" x="16" y="428" width="382" height="418"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">Answering questions: You can use me to provide answers to questions on a wide range of topics, such as science, history, or current events.
+
+Language translation: You can use me to translate text from one language to another. I can currently translate text to and from several languages, including English, French, German, Spanish, Chinese, and Japanese.
+
+Chatbot integration: You can integrate me into your chatbot or virtual assistant to help automate customer support or provide information to users.
+
+Content creation: You can use me to generate content for your blog, website, or social media channels. I can help you come up with ideas for articles, write summaries or introductions, or even generate full articles based on a given topic.
+
+</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to use me?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AI9-Yv-wxg">
+                                <rect key="frame" x="103" y="380" width="200" height="32"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RxI-iP-yPL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RxI-iP-yPL" firstAttribute="trailing" secondItem="Iab-up-24b" secondAttribute="trailing" constant="16" id="2fH-cH-OjH"/>
+                            <constraint firstItem="Iab-up-24b" firstAttribute="top" secondItem="RxI-iP-yPL" secondAttribute="top" constant="16" id="3Gn-LU-VQ5"/>
+                            <constraint firstItem="pRB-xN-80e" firstAttribute="top" secondItem="AI9-Yv-wxg" secondAttribute="bottom" constant="16" id="90f-Pg-rFe"/>
+                            <constraint firstItem="pRB-xN-80e" firstAttribute="leading" secondItem="RxI-iP-yPL" secondAttribute="leading" constant="16" id="9L7-Lf-4PY"/>
+                            <constraint firstItem="RxI-iP-yPL" firstAttribute="bottom" secondItem="pRB-xN-80e" secondAttribute="bottom" constant="16" id="DRi-77-pDd"/>
+                            <constraint firstItem="AI9-Yv-wxg" firstAttribute="top" secondItem="Iab-up-24b" secondAttribute="bottom" constant="16" id="Lqk-sk-KlY"/>
+                            <constraint firstItem="RxI-iP-yPL" firstAttribute="trailing" secondItem="AI9-Yv-wxg" secondAttribute="trailing" constant="111" id="PaZ-Ng-8e5"/>
+                            <constraint firstItem="AI9-Yv-wxg" firstAttribute="leading" secondItem="RxI-iP-yPL" secondAttribute="leading" constant="103" id="Vmh-8m-AVX"/>
+                            <constraint firstItem="AI9-Yv-wxg" firstAttribute="top" secondItem="Iab-up-24b" secondAttribute="bottom" constant="16" id="ZIO-ha-UMI"/>
+                            <constraint firstItem="RxI-iP-yPL" firstAttribute="trailing" secondItem="pRB-xN-80e" secondAttribute="trailing" constant="16" id="aRN-8a-YwU"/>
+                            <constraint firstItem="Iab-up-24b" firstAttribute="leading" secondItem="RxI-iP-yPL" secondAttribute="leading" constant="16" id="gnb-Ks-TMQ"/>
+                            <constraint firstItem="pRB-xN-80e" firstAttribute="top" secondItem="AI9-Yv-wxg" secondAttribute="bottom" constant="16" id="lGu-tJ-DfG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="X8F-wr-pWy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uIm-RW-52Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2107.2463768115945" y="-2.0089285714285712"/>
+        </scene>
+        <!--Two View Controller-->
+        <scene sceneID="ru6-R2-RAj">
+            <objects>
+                <viewController id="q0n-2T-ans" customClass="TwoViewController" customModule="IAmChatGPT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LOb-mp-LQR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="how to use" translatesAutoresizingMaskIntoConstraints="NO" id="7OZ-i1-TfD">
+                                <rect key="frame" x="54" y="113" width="307" height="227"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What are my limitations?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDy-eP-UO5">
+                                <rect key="frame" x="69" y="348" width="276" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1LQ-6r-DaY">
+                                <rect key="frame" x="16" y="393" width="388" height="528"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">As an AI language model, I have several limitations that users should be aware of. These include my limited contextual understanding, the potential for bias and inaccuracies in my responses, my inability to reason in the same way as humans, and my lack of emotional intelligence.
+
+ While I can understand and respond to a wide range of questions, my understanding is limited by the context of the input I receive, and my responses are based solely on the patterns and associations I have learned from my training data. Therefore, it's important for users to keep in mind that while I can be a powerful tool for generating responses, I have limitations and may not always provide accurate or relevant responses.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LIg-1R-hun"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="1LQ-6r-DaY" secondAttribute="bottom" constant="-25" id="6hc-we-Rut"/>
+                            <constraint firstItem="1LQ-6r-DaY" firstAttribute="top" secondItem="JDy-eP-UO5" secondAttribute="bottom" constant="16" id="HPZ-gd-8fj"/>
+                            <constraint firstItem="JDy-eP-UO5" firstAttribute="top" secondItem="LOb-mp-LQR" secondAttribute="top" constant="348" id="JbK-5B-0Xf"/>
+                            <constraint firstItem="JDy-eP-UO5" firstAttribute="leading" secondItem="LIg-1R-hun" secondAttribute="leading" constant="69" id="MkF-qr-iNx"/>
+                            <constraint firstItem="1LQ-6r-DaY" firstAttribute="leading" secondItem="LIg-1R-hun" secondAttribute="leading" constant="16" id="OPl-VS-vue"/>
+                            <constraint firstItem="LIg-1R-hun" firstAttribute="trailing" secondItem="1LQ-6r-DaY" secondAttribute="trailing" constant="10" id="XDY-o6-8HO"/>
+                            <constraint firstItem="1LQ-6r-DaY" firstAttribute="leading" secondItem="LIg-1R-hun" secondAttribute="leading" constant="16" id="daJ-bi-XvE"/>
+                            <constraint firstItem="1LQ-6r-DaY" firstAttribute="top" secondItem="JDy-eP-UO5" secondAttribute="bottom" constant="16" id="hoO-er-sma"/>
+                            <constraint firstItem="JDy-eP-UO5" firstAttribute="top" secondItem="7OZ-i1-TfD" secondAttribute="bottom" constant="8" id="oYC-m7-5Bk"/>
+                            <constraint firstAttribute="bottom" secondItem="1LQ-6r-DaY" secondAttribute="bottom" constant="-25" id="s3C-0o-J8b"/>
+                            <constraint firstItem="JDy-eP-UO5" firstAttribute="centerX" secondItem="7OZ-i1-TfD" secondAttribute="centerX" id="xkb-by-cEc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="WC6-RL-Brr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q7c-NW-YtQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="820.28985507246387" y="732.58928571428567"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sba-Od-rbr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="z7K-gw-e3I" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="o11-uN-oPr">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="KDK-xf-w1K"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZeP-iL-eL0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57.251908396946561" y="-2.1126760563380285"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BingLogo" width="243" height="243"/>
+        <image name="ChatGPT" width="249" height="249"/>
+        <image name="ai brain" width="256" height="256"/>
+        <image name="how to use" width="256" height="256"/>
+        <image name="question" width="256" height="256"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
