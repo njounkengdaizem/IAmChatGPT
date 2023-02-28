@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="z7K-gw-e3I">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -14,17 +14,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" userLabel="Main Screen View Controller" customClass="ViewController" customModule="IAmChatGPT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lZd-uW-5Xe">
-                                <rect key="frame" x="16" y="75" width="396" height="801"/>
+                                <rect key="frame" x="16" y="87" width="361" height="715"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8T1-aM-eAx" userLabel="Profile">
-                                        <rect key="frame" x="0.0" y="0.0" width="396" height="395.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="352.66666666666669"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xhC-JF-f0C">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="187.66666666666666"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="340" height="166.33333333333334"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ChatGPT" translatesAutoresizingMaskIntoConstraints="NO" id="NB2-Uw-s0X">
                                                         <rect key="frame" x="58" y="22" width="258" height="165"/>
@@ -34,7 +34,7 @@
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XSC-YY-AC5">
-                                                <rect key="frame" x="0.0" y="207.66666666666669" width="375" height="188"/>
+                                                <rect key="frame" x="0.0" y="186.33333333333331" width="340" height="166.33333333333331"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;Beware of Artificial Idiocracy!&quot;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70W-7e-WDU">
                                                         <rect key="frame" x="47" y="20" width="280" height="113"/>
@@ -54,10 +54,10 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fT7-6u-c3l" userLabel="Buttons Stack">
-                                        <rect key="frame" x="0.0" y="405.66666666666674" width="396" height="395.33333333333326"/>
+                                        <rect key="frame" x="0.0" y="362.66666666666674" width="361" height="352.33333333333326"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fhp-xj-Fze">
-                                                <rect key="frame" x="24.666666666666657" y="0.0" width="346.66666666666674" height="98.666666666666671"/>
+                                                <rect key="frame" x="24.666666666666657" y="0.0" width="311.66666666666674" height="88"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BingLogo" translatesAutoresizingMaskIntoConstraints="NO" id="1Cd-B7-1ky">
                                                         <rect key="frame" x="0.0" y="10" width="32" height="30"/>
@@ -73,7 +73,7 @@
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DAM-7A-fQZ">
-                                                <rect key="frame" x="24.666666666666657" y="98.666666666666686" width="346.66666666666674" height="99"/>
+                                                <rect key="frame" x="24.666666666666657" y="87.999999999999943" width="311.66666666666674" height="88"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y8v-wc-QNM">
                                                         <rect key="frame" x="0.0" y="4" width="303" height="35"/>
@@ -92,7 +92,7 @@
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6qM-hO-8JY">
-                                                <rect key="frame" x="24.666666666666657" y="197.66666666666669" width="346.66666666666674" height="98.666666666666686"/>
+                                                <rect key="frame" x="24.666666666666657" y="175.99999999999994" width="311.66666666666674" height="88.333333333333314"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4d-ka-HFJ">
                                                         <rect key="frame" x="3" y="8" width="301" height="35"/>
@@ -111,7 +111,7 @@
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BU4-EP-bRv">
-                                                <rect key="frame" x="24.666666666666657" y="296.33333333333331" width="346.66666666666674" height="99"/>
+                                                <rect key="frame" x="24.666666666666657" y="264.33333333333331" width="311.66666666666674" height="88"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3vj-uR-eBC">
                                                         <rect key="frame" x="0.0" y="8" width="310" height="35"/>
@@ -187,14 +187,14 @@
             <objects>
                 <viewController id="KQm-ni-5VF" customClass="OneViewController" customModule="IAmChatGPT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" semanticContentAttribute="spatial" id="WG6-yN-ZCa">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ai brain" translatesAutoresizingMaskIntoConstraints="NO" id="y4Q-zx-rAg">
-                                <rect key="frame" x="16" y="107" width="396" height="256"/>
+                                <rect key="frame" x="16" y="119" width="361" height="256"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AM4-oY-1X3">
-                                <rect key="frame" x="71" y="426.66666666666674" width="284" height="420.33333333333326"/>
+                                <rect key="frame" x="71" y="438.66666666666674" width="249" height="334.33333333333326"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">As a language model, I work by processing natural language input from users and generating appropriate responses. I was trained using a massive amount of text data using deep learning techniques, specifically a type of neural network called a Transformer architecture. This training enables me to understand and respond to a wide range of questions, based on patterns and associations that I have learned from the data.
 
@@ -204,7 +204,7 @@ When a user enters a question or statement, I first use natural language process
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do I work?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byY-MX-u1L">
-                                <rect key="frame" x="103" y="379" width="223" height="31.666666666666686"/>
+                                <rect key="frame" x="103" y="391" width="188" height="31.666666666666686"/>
                                 <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <nil key="textColor"/>
@@ -246,11 +246,11 @@ When a user enters a question or statement, I first use natural language process
             <objects>
                 <viewController id="agM-aU-k58" customClass="ThreeViewController" customModule="IAmChatGPT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6jS-cx-4ds">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="question" translatesAutoresizingMaskIntoConstraints="NO" id="Iab-up-24b">
-                                <rect key="frame" x="16" y="107" width="396" height="256"/>
+                                <rect key="frame" x="16" y="119" width="361" height="256"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="X5w-Kg-ckE">
                                 <rect key="frame" x="72" y="441" width="284" height="450.66666666666674"/>
@@ -302,7 +302,7 @@ Content creation: You can use me to generate content for your blog, website, or 
             <objects>
                 <viewController id="q0n-2T-ans" customClass="TwoViewController" customModule="IAmChatGPT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LOb-mp-LQR">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="how to use" translatesAutoresizingMaskIntoConstraints="NO" id="7OZ-i1-TfD">
@@ -358,7 +358,7 @@ As an AI language model, I don't have emotional intelligence and can't understan
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="z7K-gw-e3I" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="o11-uN-oPr">
-                        <rect key="frame" x="0.0" y="47" width="428" height="44"/>
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
