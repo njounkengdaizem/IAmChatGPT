@@ -21,18 +21,22 @@ The following **required** functionality is completed:
  
 The following **optional** features are implemented:
 
-- [ ] Improve and customize the user interface through styling and coloring
-- [ ] Allow users to scroll when context items are off-screen (table view implemention)
+- [X] Improve and customize the user interface through styling and coloring
+- [X] Allow users to scroll when context items are off-screen (table view implemention)
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+- [X] List anything else that you can get done to improve the app functionality!
+- Make the screens more user friendly.
+- Add styling
+- Add user interactions (clicking, scrolling etc.)
+- Add content. Right now, the app is practically boring
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-https://github.com/njounkengdaizem/IAmChatGPT/blob/main/videowalkthrough.gif
+https://github.com/njounkengdaizem/IAmChatGPT/blob/3caaa8f893ab25792856660574050c27eb71a3f4/videowalkthrough.gif
 
 
 ## Notes
