@@ -36,7 +36,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-https://github.com/njounkengdaizem/IAmChatGPT/blob/main/videowalkthrough.gif
+https://github.com/njounkengdaizem/IAmChatGPT/blob/3caaa8f893ab25792856660574050c27eb71a3f4/videowalkthrough.gif
 
 
 ## Notes
